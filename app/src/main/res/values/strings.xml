@@ -4,6 +4,7 @@
         <item>1.我的账户</item>
         <item>5,6,7环境指标</item>
         <item>13.路况查询</item>
+        <item>8.出行管理</item>
     </string-array>
 
     <string name="temp">温度：%1$d°C</string>

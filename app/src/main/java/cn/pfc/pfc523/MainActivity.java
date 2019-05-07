@@ -9,9 +9,10 @@ import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.ListView;
 
-import cn.pfc.pfc523.activitys.EnvironmentIndex.EnvironmentIndexActivity;
+import cn.pfc.pfc523.activitys.fyh.EnvironmentIndex.EnvironmentIndexActivity;
 import cn.pfc.pfc523.activitys.MyAccountActivity;
 import cn.pfc.pfc523.activitys.RoadQueryActivity;
+import cn.pfc.pfc523.activitys.fyh.TravelManageActivity;
 
 public class MainActivity extends AppCompatActivity {
     SlidingPaneLayout sli;
@@ -48,6 +49,9 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case 2:
                         startActivity(new Intent(MainActivity.this, RoadQueryActivity.class));
+                        break;
+                    case 3:
+                        startActivity(new Intent(MainActivity.this, TravelManageActivity.class));
                         break;
                 }
             }
