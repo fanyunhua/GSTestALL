@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RoadQuery2Activity"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="路况查询"
+            android:gravity="center"
+            android:textSize="35sp"
+            android:background="#2FA4E2"
+            android:textColor="#fff"/>
+
+        <ImageView
+            android:id="@+id/road2_back"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:background="@mipmap/back"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="4"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="室外空气指数"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:layout_marginTop="70dp"
+            android:layout_marginLeft="50dp"/>
+
+        <TextView
+            android:id="@+id/road2_pmTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/pm"
+            android:textSize="35sp"
+            android:layout_marginTop="70dp"
+            android:layout_marginLeft="50dp"/>
+
+        <TextView
+            android:id="@+id/road2_tempTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/temp"
+            android:textSize="35sp"
+            android:layout_marginTop="70dp"
+            android:layout_marginLeft="50dp"/>
+
+        <TextView
+            android:id="@+id/road2_humTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/hum"
+            android:textSize="35sp"
+            android:layout_marginTop="70dp"
+            android:layout_marginLeft="50dp"/>
+
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1">
+
+
+            <TextView
+                android:id="@+id/road2_r1TV"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="30sp"
+                android:gravity="center"
+                android:text="@string/road1" />
+
+            <TextView
+                android:id="@+id/road2_r2TV"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="30sp"
+                android:gravity="center"
+                android:text="@string/road2" />
+
+            <TextView
+                android:id="@+id/road2_r3TV"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textSize="30sp"
+                android:gravity="center"
+                android:text="@string/road3" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1" >
+
+
+            <TextView
+                android:id="@+id/road2_r1Color"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/road2_r2Color"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/road2_r3Color"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>

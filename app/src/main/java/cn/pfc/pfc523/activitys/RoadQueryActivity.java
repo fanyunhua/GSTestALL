@@ -32,6 +32,7 @@ public class RoadQueryActivity extends AppCompatActivity {
     TextView road_dateTV, road_weekTV, road_tempTV, road_humTV, road_pmTV, road_back;
     ImageView road_refreshIV;
     TextView road_huanCheng1, road_huanCheng2, road_huanCheng3, road_highSpeed, road_xueYuan, road_xingFu, road_lianXiang, road_yiYuan, road_park;
+    RequestQueue queue = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,6 +45,7 @@ public class RoadQueryActivity extends AppCompatActivity {
     }
 
     private void initViews() {
+        queue = Volley.newRequestQueue(this);
         road_dateTV = findViewById(R.id.road_dateTV);
         road_weekTV = findViewById(R.id.road_weekTV);
         road_tempTV = findViewById(R.id.road_tempTV);
@@ -64,19 +66,19 @@ public class RoadQueryActivity extends AppCompatActivity {
 
         final TextView[] tvs = {road_huanCheng1, road_huanCheng2, road_huanCheng3, road_highSpeed, road_xueYuan, road_xingFu, road_lianXiang, road_yiYuan, road_park};
 
-        @SuppressLint("HandlerLeak") final Handler handler1 = new Handler(){
+        @SuppressLint("HandlerLeak") final Handler handler1 = new Handler() {
             @Override
             public void handleMessage(Message msg) {
                 super.handleMessage(msg);
                 for (int i = 0; i < tvs.length; i++) {
-                    getRoadState(i + 1,tvs[i]);
+                    getRoadState(i + 1, tvs[i]);
                 }
             }
         };
         new Thread(new Runnable() {
             @Override
             public void run() {
-                while(true){
+                while (true) {
                     handler1.sendEmptyMessage(1);
                     try {
                         Thread.sleep(3000);
@@ -86,7 +88,6 @@ public class RoadQueryActivity extends AppCompatActivity {
                 }
             }
         }).start();
-
 
 
         @SuppressLint("HandlerLeak") final Handler handler = new Handler() {
@@ -137,7 +138,6 @@ public class RoadQueryActivity extends AppCompatActivity {
             JSONObject jsonObject = new JSONObject();
             jsonObject.put("UserName", "user1");
             String url = "http://192.168.90.6:8080/transportservice/action/GetAllSense.do";
-            RequestQueue mQueue = Volley.newRequestQueue(this);
             JsonObjectRequest request = new JsonObjectRequest(Request.Method.POST, url, jsonObject, new Response.Listener<JSONObject>() {
                 @Override
                 public void onResponse(JSONObject jsonObject) {
@@ -160,7 +160,7 @@ public class RoadQueryActivity extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(), "网络连接失败！", Toast.LENGTH_SHORT).show();
                 }
             });
-            mQueue.add(request);
+            queue.add(request);
         } catch (JSONException e) {
             e.printStackTrace();
         }
@@ -201,8 +201,6 @@ public class RoadQueryActivity extends AppCompatActivity {
             JSONObject jsonObject = new JSONObject();
             jsonObject.put("RoadId", roadId).put("UserName", "user1");
             String url = "http://192.168.90.6:8080/transportservice/action/GetRoadStatus.do";
-
-            final RequestQueue queue = Volley.newRequestQueue(this);
             final JsonObjectRequest request = new JsonObjectRequest(Request.Method.POST, url, jsonObject, new Response.Listener<JSONObject>() {
                 @Override
                 public void onResponse(JSONObject jsonObject) {

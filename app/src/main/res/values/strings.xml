@@ -7,9 +7,15 @@
         <item>8.出行管理</item>
         <item>3.账单管理</item>
         <item>10.公交查询</item>
+        <item>25.路况查询2</item>
     </string-array>
 
     <string name="temp">温度：%1$d°C</string>
     <string name="hum">相对湿度：%1$d％</string>
     <string name="pm">PM2.5：%1$dμg/m³</string>
+
+    <string name="road1">一号道路：%1$s</string>
+    <string name="road2">二号道路：%1$s</string>
+    <string name="road3">三号道路：%1$s</string>
+
 </resources>
