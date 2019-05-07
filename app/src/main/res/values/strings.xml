@@ -6,6 +6,7 @@
         <item>13.路况查询</item>
         <item>8.出行管理</item>
         <item>3.账单管理</item>
+        <item>10.公交查询</item>
     </string-array>
 
     <string name="temp">温度：%1$d°C</string>
