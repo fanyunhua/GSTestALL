@@ -9,6 +9,7 @@ import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.ListView;
 
+import cn.pfc.pfc523.activitys.EnvironmentIndex.EnvironmentIndexActivity;
 import cn.pfc.pfc523.activitys.MyAccountActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -40,6 +41,9 @@ public class MainActivity extends AppCompatActivity {
                 switch (position){
                     case 0:
                         startActivity(new Intent(MainActivity.this, MyAccountActivity.class));
+                        break;
+                    case 1:
+                        startActivity(new Intent(MainActivity.this, EnvironmentIndexActivity.class));
                         break;
                 }
             }
