@@ -29,58 +29,65 @@
                 android:id="@+id/road_dateTV"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="35sp"
-                android:layout_margin="50dp"
-                android:text="日期" />
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="35dp"
+                android:text="日期"
+                android:textSize="30sp" />
 
             <TextView
                 android:id="@+id/road_weekTV"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="35sp"
                 android:layout_below="@id/road_dateTV"
-                android:layout_margin="50dp"
-                android:text="星期X" />
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="55dp"
+                android:text="星期X"
+                android:textSize="30sp" />
 
             <TextView
                 android:id="@+id/road_tempTV"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="25sp"
                 android:layout_alignParentRight="true"
-                android:layout_margin="30dp"
-                android:text="@string/temp" />
+                android:layout_marginTop="80dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="20dp"
+                android:text="@string/temp"
+                android:textSize="25sp" />
 
 
             <TextView
                 android:id="@+id/road_humTV"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="25sp"
-                android:layout_alignParentRight="true"
                 android:layout_below="@id/road_tempTV"
-                android:layout_margin="30dp"
-                android:text="@string/hum" />
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="20dp"
+                android:text="@string/hum"
+                android:textSize="25sp" />
 
 
             <TextView
                 android:id="@+id/road_pmTV"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="25sp"
-                android:layout_alignParentRight="true"
                 android:layout_below="@id/road_humTV"
-                android:layout_margin="30dp"
-                android:text="@string/pm" />
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp"
+
+                android:text="@string/pm"
+                android:textSize="25sp" />
 
             <TextView
                 android:id="@+id/road_tv1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="道路拥挤程度示意"
-                android:layout_marginTop="300dp"
                 android:layout_marginLeft="30dp"
-                android:textSize="35sp"/>
+                android:layout_marginTop="300dp"
+                android:text="道路拥挤程度示意"
+                android:textSize="35sp" />
 
             <TableLayout
                 android:layout_width="wrap_content"
@@ -100,13 +107,13 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="严重拥堵"
-                        android:textSize="25sp"/>
+                        android:textSize="25sp" />
 
                     <TextView
                         android:layout_width="150dp"
                         android:layout_height="match_parent"
-                        android:background="#b01e23"
-                        android:layout_marginLeft="15dp"/>
+                        android:layout_marginLeft="15dp"
+                        android:background="#b01e23" />
                 </TableRow>
 
                 <TableRow
@@ -120,13 +127,13 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="中度拥堵"
-                        android:textSize="25sp"/>
+                        android:textSize="25sp" />
 
                     <TextView
                         android:layout_width="150dp"
                         android:layout_height="match_parent"
-                        android:background="#e33532"
-                        android:layout_marginLeft="15dp"/>
+                        android:layout_marginLeft="15dp"
+                        android:background="#e33532" />
                 </TableRow>
 
                 <TableRow
@@ -140,13 +147,13 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="一般拥堵"
-                        android:textSize="25sp"/>
+                        android:textSize="25sp" />
 
                     <TextView
                         android:layout_width="150dp"
                         android:layout_height="match_parent"
-                        android:background="#f49b25"
-                        android:layout_marginLeft="15dp"/>
+                        android:layout_marginLeft="15dp"
+                        android:background="#f49b25" />
                 </TableRow>
 
                 <TableRow
@@ -160,13 +167,13 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="缓行"
-                        android:textSize="25sp"/>
+                        android:textSize="25sp" />
 
                     <TextView
                         android:layout_width="150dp"
                         android:layout_height="match_parent"
-                        android:background="#ece93a"
-                        android:layout_marginLeft="15dp"/>
+                        android:layout_marginLeft="15dp"
+                        android:background="#ece93a" />
                 </TableRow>
 
                 <TableRow
@@ -180,13 +187,13 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="畅通"
-                        android:textSize="25sp"/>
+                        android:textSize="25sp" />
 
                     <TextView
                         android:layout_width="150dp"
                         android:layout_height="match_parent"
-                        android:background="#6ab82e"
-                        android:layout_marginLeft="15dp"/>
+                        android:layout_marginLeft="15dp"
+                        android:background="#6ab82e" />
                 </TableRow>
 
             </TableLayout>
@@ -194,12 +201,130 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
                 android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
                 android:layout_margin="20dp"
                 app:srcCompat="@mipmap/jj" />
 
+            <ImageView
+                android:id="@+id/road_refreshIV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                app:srcCompat="@mipmap/refresh" />
+
         </RelativeLayout>
+
+        <TextView
+            android:id="@+id/road_huanCheng1"
+            android:layout_width="620dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="35dp"
+            android:background="#f49b25"
+            android:gravity="center"
+            android:text="环 城 快 速 路"
+            android:textColor="#ddd"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/road_huanCheng2"
+            android:layout_width="wrap_content"
+            android:layout_height="550dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="60dp"
+            android:background="#f49b25"
+            android:gravity="center"
+            android:text="环\n\n城\n\n快\n\n速\n\n路"
+            android:textColor="#ddd"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/road_huanCheng3"
+            android:layout_width="620dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="45dp"
+            android:layout_marginBottom="40dp"
+            android:background="#f49b25"
+            android:gravity="center"
+            android:text="环 城 快 速 路"
+            android:textColor="#ddd"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/road_highSpeed"
+            android:layout_width="wrap_content"
+            android:layout_height="550dp"
+            android:layout_marginLeft="670dp"
+            android:layout_marginTop="60dp"
+            android:background="#f49b25"
+            android:gravity="center"
+            android:text="环\n\n城\n\n高\n\n速"
+            android:textColor="#ddd"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/road_xueYuan"
+            android:layout_width="wrap_content"
+            android:layout_height="260dp"
+            android:layout_marginLeft="205dp"
+            android:layout_marginTop="60dp"
+            android:background="#f49b25"
+            android:gravity="center"
+            android:text="学\n\n院\n\n路"
+            android:textColor="#ddd"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/road_lianXiang"
+            android:layout_width="wrap_content"
+            android:layout_height="260dp"
+            android:layout_marginLeft="362dp"
+            android:layout_marginTop="60dp"
+            android:background="#f49b25"
+            android:gravity="center"
+            android:text="联\n\n想\n\n路"
+            android:textColor="#ddd"
+            android:textSize="20dp" />
+
+
+        <TextView
+            android:id="@+id/road_xingFu"
+            android:layout_width="wrap_content"
+            android:layout_height="260dp"
+            android:layout_marginLeft="205dp"
+            android:layout_marginTop="340dp"
+            android:background="#f49b25"
+            android:gravity="center"
+            android:text="幸\n\n福\n\n路"
+            android:textColor="#ddd"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/road_yiYuan"
+            android:layout_width="wrap_content"
+            android:layout_height="260dp"
+            android:layout_marginLeft="362dp"
+            android:layout_marginTop="340dp"
+            android:background="#f49b25"
+            android:gravity="center"
+            android:text="医\n\n院\n\n路"
+            android:textColor="#ddd"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/road_park"
+            android:layout_width="100dp"
+            android:layout_height="180dp"
+            android:layout_marginLeft="476.5dp"
+            android:layout_marginTop="240dp"
+            android:background="#f49b25"
+            android:gravity="center"
+            android:text="停车场"
+            android:textColor="#ddd"
+            android:textSize="20dp" />
 
     </RelativeLayout>
 

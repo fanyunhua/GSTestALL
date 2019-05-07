@@ -9,6 +9,6 @@
     </string-array>
 
     <string name="temp">温度：%1$d°C</string>
-    <string name="hum">相对湿度：%1$d%</string>
+    <string name="hum">相对湿度：%1$d％</string>
     <string name="pm">PM2.5：%1$dμg/m³</string>
 </resources>
