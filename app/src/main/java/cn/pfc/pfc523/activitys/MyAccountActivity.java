@@ -1,9 +1,11 @@
-package cn.pfc.pfc523;
+package cn.pfc.pfc523.activitys;
 
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+
+import cn.pfc.pfc523.R;
 
 public class MyAccountActivity extends Activity {
     ImageView img;

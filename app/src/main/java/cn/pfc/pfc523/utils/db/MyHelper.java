@@ -1,4 +1,4 @@
-package cn.pfc.pfc523;
+package cn.pfc.pfc523.utils.db;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;

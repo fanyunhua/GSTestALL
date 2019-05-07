@@ -9,6 +9,8 @@ import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.ListView;
 
+import cn.pfc.pfc523.activitys.MyAccountActivity;
+
 public class MainActivity extends AppCompatActivity {
     SlidingPaneLayout sli;
     ImageView img;
@@ -37,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 switch (position){
                     case 0:
-                        startActivity(new Intent(MainActivity.this,MyAccountActivity.class));
+                        startActivity(new Intent(MainActivity.this, MyAccountActivity.class));
                         break;
                 }
             }
