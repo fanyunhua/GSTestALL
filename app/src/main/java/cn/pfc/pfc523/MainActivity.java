@@ -9,6 +9,7 @@ import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.ListView;
 
+import cn.pfc.pfc523.activitys.ZDGLActivity;
 import cn.pfc.pfc523.activitys.fyh.EnvironmentIndex.EnvironmentIndexActivity;
 import cn.pfc.pfc523.activitys.MyAccountActivity;
 import cn.pfc.pfc523.activitys.RoadQueryActivity;
@@ -52,6 +53,9 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case 3:
                         startActivity(new Intent(MainActivity.this, TravelManageActivity.class));
+                        break;
+                    case 4:
+                        startActivity(new Intent(MainActivity.this, ZDGLActivity.class));
                         break;
                 }
             }

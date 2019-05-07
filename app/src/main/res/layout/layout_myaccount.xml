@@ -25,4 +25,93 @@
             android:textColor="#fff"
             android:text="我的账户" />
     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_marginLeft="200dp"
+            android:layout_height="match_parent"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:text="账户余额：" />
+
+        <TextView
+            android:id="@+id/tv_1_yue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="25sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_marginLeft="200dp"
+            android:layout_height="match_parent"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:text="车          号：" />
+
+        <Spinner
+            android:id="@+id/spinner_1"
+            android:layout_width="200dp"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="200dp"
+            android:gravity="center"
+            android:text="充值金额："
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/et_1"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:hint="1-999"
+            android:inputType="number"
+            android:maxLength="3" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/but_1_cx"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="260dp"
+            android:text="查询"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/but_1_cz"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="50dp"
+            android:text="充值"
+            android:textSize="25sp" />
+    </LinearLayout>
 </LinearLayout>

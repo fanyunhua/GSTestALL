@@ -12,7 +12,7 @@ public class MyHelper extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
         String table3="create table table3(" +
-                "cai_id int," +
+                "car_id int," +
                 "money int," +
                 "ren varchar(50)," +
                 "atime varchar(50))";
