@@ -16,7 +16,9 @@ public class MyHelper extends SQLiteOpenHelper {
                 "money int," +
                 "ren varchar(50)," +
                 "atime varchar(50))";
+        String env = "create table env (dt varchar(30),co2 int,pm int ,g int, s int,w int,road int )";
         db.execSQL(table3);
+        db.execSQL(env);
     }
 
     @Override

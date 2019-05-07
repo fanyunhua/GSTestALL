@@ -1,9 +1,204 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activitys.EnvironmentIndex.EnvironmentIndexActivity">
+    tools:context=".activitys.EnvironmentIndex.EnvironmentIndexActivity"
+    android:orientation="vertical">
 
-</android.support.constraint.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#0cf"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/img_back_ENVP"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:background="@mipmap/back" />
+
+        <TextView
+            android:layout_width="668dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="环境指标"
+            android:layout_weight="1"
+            android:textColor="#fff"
+            android:textSize="35sp" />
+        <TextView
+            android:id="@+id/mENTVYUZHI"
+            android:layout_width="250dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="60dp"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="阈值设置" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:id="@+id/mENLL1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:background="#0f0">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="温度"
+                android:textSize="50sp"/>
+
+            <TextView
+                android:id="@+id/mENTV1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/en_tv_bg"
+                android:text="30"
+                android:gravity="center"
+                android:textSize="30sp"
+                android:layout_marginLeft="150dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/mENLL2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:background="#0f0">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="湿度"
+                android:textSize="50sp"/>
+
+            <TextView
+                android:id="@+id/mENTV2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:textSize="30sp"
+                android:background="@drawable/en_tv_bg"
+                android:text="30"
+                android:gravity="center"
+                android:layout_marginLeft="150dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/mENLL3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_margin="10dp"
+        android:background="#0f0">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="光照"
+            android:textSize="50sp"/>
+
+        <TextView
+            android:id="@+id/mENTV3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:textSize="30sp"
+            android:background="@drawable/en_tv_bg"
+            android:text="30"
+            android:gravity="center"
+            android:layout_marginLeft="150dp"/>
+    </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:id="@+id/mENLL4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:background="#0f0">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CQ2"
+                android:textSize="50sp"/>
+
+            <TextView
+                android:id="@+id/mENTV4"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:textSize="30sp"
+                android:background="@drawable/en_tv_bg"
+                android:text="30"
+                android:gravity="center"
+                android:layout_marginLeft="150dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/mENLL5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:background="#0f0">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="PM2.5"
+                android:textSize="50sp"/>
+
+            <TextView
+                android:id="@+id/mENTV5"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/en_tv_bg"
+                android:text="30"
+                android:textSize="30sp"
+                android:gravity="center"
+                android:layout_marginLeft="150dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/mENLL6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:background="#0f0">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="道路状态"
+                android:textSize="50sp"/>
+
+            <TextView
+                android:id="@+id/mENTV6"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/en_tv_bg"
+                android:text="30"
+                android:gravity="center"
+                android:textSize="30sp"
+                android:layout_marginLeft="150dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

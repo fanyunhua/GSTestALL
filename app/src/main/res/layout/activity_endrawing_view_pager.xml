@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activitys.EnvironmentIndex.ENDrawingVieaPagerActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#0cf"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/img_back_ENVP"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:background="@mipmap/back" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="60dp"
+            android:textSize="35sp"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:text="实时显示" />
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/mGSENVP1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"></android.support.v4.view.ViewPager>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/mGSENTV1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/point_black"/>
+        <TextView
+            android:id="@+id/mGSENTV2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/point_white"/>
+        <TextView
+            android:id="@+id/mGSENTV3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/point_white"/>
+        <TextView
+            android:id="@+id/mGSENTV4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/point_white"/>
+        <TextView
+            android:id="@+id/mGSENTV5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/point_white"/>
+        <TextView
+            android:id="@+id/mGSENTV6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/point_white"/>
+    </LinearLayout>
+
+</LinearLayout>
