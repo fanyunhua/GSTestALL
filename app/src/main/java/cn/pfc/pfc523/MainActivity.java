@@ -11,6 +11,7 @@ import android.widget.ListView;
 
 import cn.pfc.pfc523.activitys.EnvironmentIndex.EnvironmentIndexActivity;
 import cn.pfc.pfc523.activitys.MyAccountActivity;
+import cn.pfc.pfc523.activitys.RoadQueryActivity;
 
 public class MainActivity extends AppCompatActivity {
     SlidingPaneLayout sli;
@@ -44,6 +45,9 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case 1:
                         startActivity(new Intent(MainActivity.this, EnvironmentIndexActivity.class));
+                        break;
+                    case 2:
+                        startActivity(new Intent(MainActivity.this, RoadQueryActivity.class));
                         break;
                 }
             }
