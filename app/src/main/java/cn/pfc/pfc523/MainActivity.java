@@ -9,6 +9,7 @@ import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.ListView;
 
+import cn.pfc.pfc523.activitys.CarWzActivity;
 import cn.pfc.pfc523.activitys.FeedBackActivity;
 import cn.pfc.pfc523.activitys.Light2Activity;
 import cn.pfc.pfc523.activitys.ZDGLActivity;
@@ -73,6 +74,9 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case 8:
                         startActivity(new Intent(MainActivity.this, Light2Activity.class));
+                        break;
+                    case 9:
+                        startActivity(new Intent(MainActivity.this, CarWzActivity.class));
                         break;
                 }
             }
