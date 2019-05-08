@@ -1,10 +1,8 @@
 package cn.pfc.pfc523.activitys;
 
 import android.app.Activity;
-import android.app.Dialog;
 import android.content.Intent;
 import android.graphics.Color;
-import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -18,15 +16,19 @@ import java.util.List;
 
 import cn.pfc.pfc523.R;
 import cn.pfc.pfc523.adapters.CarWzAdapter;
+import cn.pfc.pfc523.adapters.CarWzAdapter2;
 import cn.pfc.pfc523.beans.CarWzBean;
+import cn.pfc.pfc523.beans.CarWzBean2;
 
 public class CarWzActivity extends Activity {
     ImageView img;
     TabHost tabHost;
     Button but_tab1,but_tab2;
-    GridView gv;
+    GridView gv,gv2;
     List<CarWzBean>list;
     CarWzAdapter adapter;
+    List<CarWzBean2>list2;
+    CarWzAdapter2 adapter2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +36,7 @@ public class CarWzActivity extends Activity {
         setContentView(R.layout.layout_carwz);
 
         list=new ArrayList<>();
+        list2=new ArrayList<>();
         img=findViewById(R.id.img_back_4);
         img.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -48,6 +51,9 @@ public class CarWzActivity extends Activity {
         gv=findViewById(R.id.gv_2);
         gv.setVerticalSpacing(50);
         gv.setHorizontalSpacing(50);
+        gv2=findViewById(R.id.gv_4);
+        gv2.setVerticalSpacing(50);
+        gv2.setHorizontalSpacing(50);
         but_tab1=findViewById(R.id.but2_tab1);
         but_tab2=findViewById(R.id.but2_tab2);
         
@@ -69,10 +75,29 @@ public class CarWzActivity extends Activity {
         });
         
         wz();
+        wz2();
+    }
+
+    private void wz2() {
+        int url[]={R.mipmap.car1,R.mipmap.car2,R.mipmap.car3,R.mipmap.car4};
+
+        for (int i = 0; i < url.length; i++) {
+            list2.add(new CarWzBean2(url[i]));
+        }
+        adapter2=new CarWzAdapter2(list2,CarWzActivity.this);
+        gv2.setAdapter(adapter2);
+        gv2.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Intent intent=new Intent(CarWzActivity.this,Dialog42Activity.class);
+                intent.putExtra("img",position);
+                startActivity(intent);
+            }
+        });
     }
 
     private void wz() {
-        int url[]={R.mipmap.pm,R.mipmap.car3,R.mipmap.english,R.mipmap.road,R.mipmap.bus};
+        int url[]={R.mipmap.pm,R.mipmap.car_play,R.mipmap.english,R.mipmap.road,R.mipmap.bus};
         String name[]={"bus.mp4","car3.3gp","english.mp4","road.mp4","pm.mp4"};
 
         for (int i = 0; i < name.length; i++) {
@@ -88,5 +113,6 @@ public class CarWzActivity extends Activity {
                 startActivity(intent);
             }
         });
+
     }
 }
