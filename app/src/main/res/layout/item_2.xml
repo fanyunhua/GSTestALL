@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_item2_1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="路口"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/tv_item2_2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="红灯时长（S）"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/tv_item2_3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="黄灯时长（S）"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/tv_item2_4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="绿灯时长（S）"
+        android:textSize="25sp" />
+</LinearLayout>
