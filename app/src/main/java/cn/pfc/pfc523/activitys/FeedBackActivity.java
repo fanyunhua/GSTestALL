@@ -1,5 +1,6 @@
 package cn.pfc.pfc523.activitys;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -68,6 +69,7 @@ public class FeedBackActivity extends AppCompatActivity implements View.OnClickL
                     Toast.makeText(getApplicationContext(), "请输入意见标题", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.feed_my:
+                startActivity(new Intent(FeedBackActivity.this,MyFeedActivity.class));
                 break;
         }
     }
