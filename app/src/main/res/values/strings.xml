@@ -19,4 +19,10 @@
     <string name="road2">二号道路：%1$s</string>
     <string name="road3">三号道路：%1$s</string>
 
+    <string name="feed_title">标题：%1$s</string>
+    <string name="feed_state">状态：%1$s</string>
+    <string name="feed_hfContent">回复内容：%1$s</string>
+    <string name="feed_hfTime">回复时间：%1$s</string>
+    <string name="feed_submitTime">提交时间：%1$s</string>
+
 </resources>
