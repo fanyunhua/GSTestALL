@@ -11,6 +11,7 @@
         <item>31.意见反馈</item>
         <item>2.红绿灯管理</item>
         <item>4.车辆违章</item>
+        <item>38.定制班车</item>
     </string-array>
 
     <string name="temp">温度：%1$d°C</string>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activitys.CustomShuttleActivity"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="#49A4D6">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="定制班车"
+            android:textSize="50sp"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:id="@+id/cs_back"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:background="@mipmap/back"/>
+
+        <TextView
+            android:id="@+id/cs_my"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="我的订单"
+            android:textSize="40sp"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"/>
+
+    </RelativeLayout>
+
+    <ExpandableListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>
