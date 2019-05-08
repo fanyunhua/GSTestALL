@@ -1,16 +1,17 @@
 package cn.pfc.pfc523.activitys;
 
 import android.app.Activity;
+import android.app.Dialog;
+import android.content.Intent;
 import android.graphics.Color;
+import android.media.MediaPlayer;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.TabHost;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -45,6 +46,8 @@ public class CarWzActivity extends Activity {
         tabHost.addTab(tabHost.newTabSpec("tab1").setIndicator("t1").setContent(R.id.tab4_1));
         tabHost.addTab(tabHost.newTabSpec("tab2").setIndicator("t2").setContent(R.id.tab4_2));
         gv=findViewById(R.id.gv_2);
+        gv.setVerticalSpacing(50);
+        gv.setHorizontalSpacing(50);
         but_tab1=findViewById(R.id.but2_tab1);
         but_tab2=findViewById(R.id.but2_tab2);
         
@@ -69,14 +72,9 @@ public class CarWzActivity extends Activity {
     }
 
     private void wz() {
-        String packge = getPackageName();
-        String url[]={"android.resource://"+packge+"/raw/"+R.raw.bus,
-                "android.resource://"+packge+"/raw/"+R.raw.car3,
-                "android.resource://"+packge+"/raw/"+R.raw.english,
-                "android.resource://"+packge+"/raw/"+R.raw.road,
-                "android.resource://"+packge+"/raw/"+R.raw.pm};
+        int url[]={R.mipmap.pm,R.mipmap.car3,R.mipmap.english,R.mipmap.road,R.mipmap.bus};
         String name[]={"bus.mp4","car3.3gp","english.mp4","road.mp4","pm.mp4"};
-        
+
         for (int i = 0; i < name.length; i++) {
             list.add(new CarWzBean(url[i],name[i]));
         }
@@ -85,20 +83,9 @@ public class CarWzActivity extends Activity {
         gv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                switch (position){
-                    case 0:
-                        Toast.makeText(CarWzActivity.this,"1",Toast.LENGTH_SHORT).show();
-                        break;
-                    case 1:
-                        Toast.makeText(CarWzActivity.this,"2",Toast.LENGTH_SHORT).show();
-                        break;
-                    case 2:
-                        Toast.makeText(CarWzActivity.this,"3",Toast.LENGTH_SHORT).show();
-                        break;
-                    case 3:
-                        Toast.makeText(CarWzActivity.this,"4",Toast.LENGTH_SHORT).show();
-                        break;
-                }
+                Intent intent=new Intent(CarWzActivity.this,Dialog4Activity.class);
+                intent.putExtra("play",position);
+                startActivity(intent);
             }
         });
     }

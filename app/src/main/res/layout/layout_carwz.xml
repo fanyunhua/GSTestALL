@@ -79,6 +79,12 @@
                 android:layout_height="match_parent">
 
                 <LinearLayout
+                    android:id="@+id/tab4_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"/>
+
+                <LinearLayout
                     android:id="@+id/tab4_1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -89,14 +95,6 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:numColumns="4" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:id="@+id/tab4_2"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
                 </LinearLayout>
 
             </FrameLayout>

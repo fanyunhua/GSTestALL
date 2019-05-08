@@ -1,11 +1,13 @@
 package cn.pfc.pfc523.adapters;
 
 import android.content.Context;
-import android.util.Log;
+import android.os.Handler;
+import android.os.Message;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.VideoView;
 
@@ -13,7 +15,6 @@ import java.util.List;
 
 import cn.pfc.pfc523.R;
 import cn.pfc.pfc523.beans.CarWzBean;
-import cn.pfc.pfc523.beans.Light2Bean;
 
 public class CarWzAdapter extends BaseAdapter {
     List<CarWzBean>list;
@@ -42,13 +43,12 @@ public class CarWzAdapter extends BaseAdapter {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         View view= LayoutInflater.from(context).inflate(R.layout.item_4,null);
-        VideoView vv=view.findViewById(R.id.vv_item4);
+        ImageView img=view.findViewById(R.id.img_item4);
         TextView tv=view.findViewById(R.id.tv_item4);
 
-        vv.setVideoPath(list.get(position).getUrl());
-        vv.start();
-
+        img.setBackgroundResource(list.get(position).getUrl());
         tv.setText(list.get(position).getName());
+
         return view;
     }
 }

@@ -34,7 +34,7 @@
         <activity android:name=".activitys.Light2Activity"></activity>
         <activity android:name=".activitys.CarWzActivity"></activity>
         <activity android:name=".activitys.CustomShuttleActivity"></activity>
-
+        <activity android:name=".activitys.Dialog4Activity"></activity>
     </application>
 
 </manifest>
