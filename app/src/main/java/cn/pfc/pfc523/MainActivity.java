@@ -11,6 +11,7 @@ import android.widget.ListView;
 
 import cn.pfc.pfc523.activitys.ZDGLActivity;
 //import cn.pfc.pfc523.activitys.fyh.BusQueryActivity;
+import cn.pfc.pfc523.activitys.fyh.BusQueryActivity;
 import cn.pfc.pfc523.activitys.fyh.EnvironmentIndex.EnvironmentIndexActivity;
 import cn.pfc.pfc523.activitys.MyAccountActivity;
 import cn.pfc.pfc523.activitys.RoadQueryActivity;
@@ -59,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
                         startActivity(new Intent(MainActivity.this, ZDGLActivity.class));
                         break;
                     case 5:
-//                        startActivity(new Intent(MainActivity.this, BusQueryActivity.class));
+                        startActivity(new Intent(MainActivity.this, BusQueryActivity.class));
                         break;
                     case 6:
                         startActivity(new Intent(MainActivity.this, RoadQuery2Activity.class));
