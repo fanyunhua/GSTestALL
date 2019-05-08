@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -149,6 +150,13 @@ public class EnvironmentIndexActivity extends AppCompatActivity implements View.
     }
 
     private void initView() {
+        ImageView img_back_ENIndex = findViewById(R.id.img_back_ENIndex);
+        img_back_ENIndex.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
         mENTVYUZHI = findViewById(R.id.mENTVYUZHI);
         linearLayouts = new LinearLayout[layoutID.length];
         textViews = new TextView[tvID.length];
@@ -161,6 +169,7 @@ public class EnvironmentIndexActivity extends AppCompatActivity implements View.
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(EnvironmentIndexActivity.this,SettingYuZhiActivity.class));
+                finish();
             }
         });
 

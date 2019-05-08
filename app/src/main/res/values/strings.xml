@@ -9,6 +9,7 @@
         <item>10.公交查询</item>
         <item>25.路况查询2</item>
         <item>31.意见反馈</item>
+        <item>2.红绿灯管理</item>
     </string-array>
 
     <string name="temp">温度：%1$d°C</string>

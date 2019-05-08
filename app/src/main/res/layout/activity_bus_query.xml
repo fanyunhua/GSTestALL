@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activitys.fyh.BusQueryActivity"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#0cf"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/img_back_mBusQuery"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:background="@mipmap/back" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="60dp"
+            android:textSize="35sp"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:text="公交查询" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:background="#ddd">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/big_bus"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="30sp"
+            android:layout_marginTop="10dp"
+            android:text="901路公交车\t\t\t 首6：00\t 末21：00" />
+
+        <TextView
+            android:id="@+id/mBusTVQueryPeople"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="30sp"
+            android:layout_marginTop="10dp"
+            android:text="当前承载能力1211人" />
+
+        <Button
+            android:id="@+id/mBusBTNQuery"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn_bg_bus"
+            android:layout_marginRight="30sp"
+            android:text="详情"
+            android:textSize="30sp"/>
+    </LinearLayout>
+    <ExpandableListView
+        android:id="@+id/mBusEListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp">
+
+    </ExpandableListView>
+</LinearLayout>

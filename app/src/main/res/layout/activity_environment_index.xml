@@ -14,7 +14,7 @@
         android:orientation="horizontal">
 
         <ImageView
-            android:id="@+id/img_back_ENVP"
+            android:id="@+id/img_back_ENIndex"
             android:layout_width="60dp"
             android:layout_height="match_parent"
             android:background="@mipmap/back" />

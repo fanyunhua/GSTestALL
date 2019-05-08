@@ -1,5 +1,6 @@
 package cn.pfc.pfc523.activitys.fyh.EnvironmentIndex;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
@@ -72,6 +73,7 @@ public class SettingYuZhiActivity extends AppCompatActivity {
         imgBackYuzhi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                startActivity(new Intent(SettingYuZhiActivity.this,EnvironmentIndexActivity.class));
                 finish();
             }
         });
@@ -97,6 +99,7 @@ public class SettingYuZhiActivity extends AppCompatActivity {
                     {
                         editor.commit();
                         Toast.makeText(SettingYuZhiActivity.this,"设置成功",Toast.LENGTH_SHORT).show();
+                        startActivity(new Intent(SettingYuZhiActivity.this,EnvironmentIndexActivity.class));
                         finish();
                     }
 

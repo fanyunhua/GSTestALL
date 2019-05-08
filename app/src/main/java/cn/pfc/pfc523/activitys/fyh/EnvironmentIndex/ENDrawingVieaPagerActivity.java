@@ -7,6 +7,8 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 
@@ -44,6 +46,13 @@ public class ENDrawingVieaPagerActivity extends AppCompatActivity {
     }
 
     private void initView() {
+        ImageView img_back_ENVP = findViewById(R.id.img_back_ENVP);
+        img_back_ENVP.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
         mGSENVP1 = findViewById(R.id.mGSENVP1);
         textViews = new TextView[tvId.length];
         for (int i = 0; i <tvId.length ; i++) {
