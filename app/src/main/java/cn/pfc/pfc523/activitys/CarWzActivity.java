@@ -76,6 +76,7 @@ public class CarWzActivity extends Activity {
                 "android.resource://"+packge+"/raw/"+R.raw.road,
                 "android.resource://"+packge+"/raw/"+R.raw.pm};
         String name[]={"bus.mp4","car3.3gp","english.mp4","road.mp4","pm.mp4"};
+        
         for (int i = 0; i < name.length; i++) {
             list.add(new CarWzBean(url[i],name[i]));
         }
