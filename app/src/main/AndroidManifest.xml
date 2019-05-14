@@ -43,6 +43,8 @@
         <activity android:name=".activitys.Dialog42Activity" />
         <activity android:name=".activitys.T27Activity"></activity>
         <activity android:name=".activitys.T33Activity"></activity>
+        <activity android:name=".activitys.T35Activity"></activity>
+        <activity android:name=".activitys.T35_2Activity"></activity>
     </application>
 
 </manifest>
