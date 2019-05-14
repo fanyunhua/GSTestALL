@@ -12,6 +12,7 @@
         <item>2.红绿灯管理</item>
         <item>4.车辆违章</item>
         <item>38.定制班车</item>
+        <item>27.生活助手</item>
     </string-array>
 
     <string name="temp">温度：%1$d°C</string>

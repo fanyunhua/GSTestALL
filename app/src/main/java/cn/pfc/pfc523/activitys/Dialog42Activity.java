@@ -13,12 +13,13 @@ import cn.pfc.pfc523.R;
 public class Dialog42Activity extends Activity {
 
     ImageView img_dialog;
+    ImageView img;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.dialog_4_2);
 
-
+        img=findViewById(R.id.img_dialog_4_2);
         img_dialog=findViewById(R.id.img_back_dialog4_2);
         Intent intent=getIntent();
         int a=intent.getIntExtra("img",0);

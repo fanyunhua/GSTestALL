@@ -13,6 +13,7 @@ import cn.pfc.pfc523.activitys.CarWzActivity;
 import cn.pfc.pfc523.activitys.CustomShuttleActivity;
 import cn.pfc.pfc523.activitys.FeedBackActivity;
 import cn.pfc.pfc523.activitys.Light2Activity;
+import cn.pfc.pfc523.activitys.T27Activity;
 import cn.pfc.pfc523.activitys.ZDGLActivity;
 //import cn.pfc.pfc523.activitys.fyh.BusQueryActivity;
 //import cn.pfc.pfc523.activitys.fyh.BusQueryActivity;
@@ -81,6 +82,9 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case 10:
                         startActivity(new Intent(MainActivity.this, CustomShuttleActivity.class));
+                        break;
+                    case 11:
+                        startActivity(new Intent(MainActivity.this, T27Activity.class));
                         break;
                 }
             }
