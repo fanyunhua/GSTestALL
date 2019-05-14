@@ -2,7 +2,10 @@ package cn.pfc.pfc523.activitys;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.drm.DrmStore;
+import android.net.Uri;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -26,6 +29,7 @@ public class T35_2Activity extends Activity {
     ImageView img;
     TextView tv,tv_dp,tv_dh;
     RequestQueue queue;
+    String tel;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,6 +48,15 @@ public class T35_2Activity extends Activity {
         tv_dp=findViewById(R.id.tv_35_2dp);
 
         query();
+        tv_dh.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent();
+                intent.setAction(Intent.ACTION_DIAL);
+                intent.setData(Uri.parse("tel:"+tel));
+                startActivity(intent);
+            }
+        });
     }
     private void query() {
         String url= AppConfig.BASE_URL+ "GetTravelInfor.do";
@@ -60,7 +73,7 @@ public class T35_2Activity extends Activity {
                         JSONObject jsonObject1=jsonArray.getJSONObject(intent.getIntExtra("lx",0));
                         String infor=jsonObject1.getString("infor");
                         int stars=jsonObject1.getInt("stars");
-                        String tel=jsonObject1.getString("tel");
+                        tel=jsonObject1.getString("tel");
 
                         tv.setText(infor);
                         tv_dp.setText("游友点评："+stars);
