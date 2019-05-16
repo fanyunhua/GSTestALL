@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_item60_1"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_margin="15dp"
+        android:background="@drawable/tv60"
+        android:gravity="center"
+        android:text="安全驾驶"
+        android:textSize="25sp" />
+
+    <ImageView
+        android:id="@+id/img_item60_1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="-35dp"
+        android:background="@mipmap/jian" />
+</LinearLayout>

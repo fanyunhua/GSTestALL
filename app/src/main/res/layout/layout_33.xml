@@ -57,9 +57,12 @@
             android:text="沈海高速胶州、莱西服务器封闭施工通知                          沈海高速胶州、莱西服务器封闭施工通知" />
     </LinearLayout>
 
-    <ImageView
+    <TextView
+        android:id="@+id/tv_33"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_margin="30dp"
-        android:background="@mipmap/gaosu" />
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="2019年5月14日：双号"
+        android:textSize="30sp" />
+
 </LinearLayout>

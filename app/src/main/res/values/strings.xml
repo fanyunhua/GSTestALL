@@ -15,6 +15,7 @@
         <item>27.生活助手</item>
         <item>33.高速路况</item>
         <item>35.旅行信息</item>
+        <item>60.我的订阅</item>
     </string-array>
 
     <string name="temp">温度：%1$d°C</string>
