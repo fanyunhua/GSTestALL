@@ -44,7 +44,7 @@ public class InternetServices extends Service {
                 {
                     if (now)
                     {
-                        //TODO show dialog
+                        //TODO show dialog 
 //                        dialog.setMessage("网络已连接");
 //                        dialog.show();
                         Toast.makeText(InternetServices.this,"网络已连接",Toast.LENGTH_SHORT).show();
