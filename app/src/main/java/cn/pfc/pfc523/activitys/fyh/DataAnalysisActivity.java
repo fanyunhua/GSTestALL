@@ -5,6 +5,7 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -49,6 +50,11 @@ public class DataAnalysisActivity extends AppCompatActivity {
 
             @Override
             public void onPageSelected(int i) {
+                if(i==1)
+                {
+                    Toast.makeText(DataAnalysisActivity.this,"如左侧坐标轴未完全展开请双击坐标轴查看",Toast.LENGTH_LONG).show();
+
+                }
                 for (int j = 0; j <tvId.length ; j++) {
                     if(i==j) textViews[j].setBackgroundResource(R.drawable.point_black);
                     else textViews[j].setBackgroundResource(R.drawable.point_white);

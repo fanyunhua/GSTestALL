@@ -13,6 +13,7 @@ import cn.pfc.pfc523.activitys.CarWzActivity;
 import cn.pfc.pfc523.activitys.CustomShuttleActivity;
 import cn.pfc.pfc523.activitys.FeedBackActivity;
 import cn.pfc.pfc523.activitys.Light2Activity;
+import cn.pfc.pfc523.activitys.RoadQuery2Activity;
 import cn.pfc.pfc523.activitys.T27Activity;
 import cn.pfc.pfc523.activitys.T33Activity;
 import cn.pfc.pfc523.activitys.T35Activity;
@@ -27,6 +28,7 @@ import cn.pfc.pfc523.activitys.fyh.EnvironmentIndex.EnvironmentIndexActivity;
 import cn.pfc.pfc523.activitys.MyAccountActivity;
 import cn.pfc.pfc523.activitys.RoadQueryActivity;
 import cn.pfc.pfc523.activitys.fyh.TravelManageActivity;
+import cn.pfc.pfc523.services.InternetServices;
 
 public class MainActivity extends AppCompatActivity {
     SlidingPaneLayout sli;
@@ -37,7 +39,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        Intent intent = new Intent(MainActivity.this, InternetServices.class);
+        startService(intent);
         sli=findViewById(R.id.sli);
         img=findViewById(R.id.img_zjm);
         lv=findViewById(R.id.lv_menu);

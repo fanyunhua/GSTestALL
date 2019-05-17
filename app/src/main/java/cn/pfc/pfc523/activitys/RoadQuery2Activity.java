@@ -1,4 +1,4 @@
-package cn.pfc.pfc523;
+package cn.pfc.pfc523.activitys;
 
 import android.annotation.SuppressLint;
 import android.graphics.Color;
@@ -20,6 +20,8 @@ import com.android.volley.toolbox.Volley;
 
 import org.json.JSONException;
 import org.json.JSONObject;
+
+import cn.pfc.pfc523.R;
 
 public class RoadQuery2Activity extends AppCompatActivity {
 

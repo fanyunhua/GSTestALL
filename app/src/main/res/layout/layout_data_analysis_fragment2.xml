@@ -3,9 +3,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
-    <com.github.mikephil.charting.charts.PieChart
-        android:id="@+id/mDataAnalisisPie2"
+    <com.github.mikephil.charting.charts.HorizontalBarChart
+        android:id="@+id/mDataAnalisisHBarChart"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="20dp"></com.github.mikephil.charting.charts.PieChart>
+        android:layout_margin="20dp"></com.github.mikephil.charting.charts.HorizontalBarChart>
 </LinearLayout>
