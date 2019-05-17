@@ -58,6 +58,7 @@
         <activity android:name=".activitys.T63InForActivity"/>
         <activity android:name=".activitys.T63CarActivity"/>
         <service android:name=".services.InternetServices"/>
+        <activity android:name=".activitys.T63PayActivity"/>
     </application>
 
 </manifest>
