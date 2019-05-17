@@ -60,4 +60,5 @@ public class MBusQueryDialogListViewAdapter extends BaseAdapter {
     public boolean areAllItemsEnabled() {
         return false;
     }
+
 }

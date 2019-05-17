@@ -12,6 +12,7 @@ import android.view.ViewGroup;
 import android.widget.Toast;
 
 import com.github.mikephil.charting.charts.LineChart;
+import com.github.mikephil.charting.components.Description;
 import com.github.mikephil.charting.components.XAxis;
 import com.github.mikephil.charting.data.Entry;
 import com.github.mikephil.charting.data.LineData;
@@ -54,7 +55,7 @@ public class ENVPFragment4 extends Fragment {
             LineDataSet lineDataSet = new LineDataSet(list,"");
             lineDataSet.setCircleColorHole(Color.BLUE);
             lineDataSet.setColor(Color.BLUE);
-            LineData lineData = new LineData(title,lineDataSet);
+            LineData lineData = new LineData(lineDataSet);
             lineChart.setData(lineData);
             lineChart.invalidate();
         }
@@ -66,7 +67,9 @@ public class ENVPFragment4 extends Fragment {
 
     private void initView(View view) {
         lineChart = view.findViewById(R.id.mENVPF4LineChart);
-        lineChart.setDescription("");
+        Description description = new Description();
+        description.setText("");
+        lineChart.setDescription(description);
         lineChart.getAxisRight().setEnabled(false);
         lineChart.getXAxis().setPosition(XAxis.XAxisPosition.BOTTOM);
         lineChart.getLegend().setEnabled(false);

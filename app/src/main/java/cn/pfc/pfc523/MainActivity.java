@@ -22,6 +22,7 @@ import cn.pfc.pfc523.activitys.ZDGLActivity;
 //import cn.pfc.pfc523.activitys.fyh.BusQueryActivity;
 //import cn.pfc.pfc523.activitys.fyh.BusQueryActivity;
 import cn.pfc.pfc523.activitys.fyh.BusQueryActivity;
+import cn.pfc.pfc523.activitys.fyh.DataAnalysisActivity;
 import cn.pfc.pfc523.activitys.fyh.EnvironmentIndex.EnvironmentIndexActivity;
 import cn.pfc.pfc523.activitys.MyAccountActivity;
 import cn.pfc.pfc523.activitys.RoadQueryActivity;
@@ -101,6 +102,9 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case 15:
                         startActivity(new Intent(MainActivity.this, T63Activity.class));
+                        break;
+                    case 16:
+                        startActivity(new Intent(MainActivity.this, DataAnalysisActivity.class));
                         break;
                 }
             }
