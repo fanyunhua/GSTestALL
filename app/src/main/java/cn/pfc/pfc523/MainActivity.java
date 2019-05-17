@@ -17,6 +17,7 @@ import cn.pfc.pfc523.activitys.T27Activity;
 import cn.pfc.pfc523.activitys.T33Activity;
 import cn.pfc.pfc523.activitys.T35Activity;
 import cn.pfc.pfc523.activitys.T60Activity;
+import cn.pfc.pfc523.activitys.T63Activity;
 import cn.pfc.pfc523.activitys.ZDGLActivity;
 //import cn.pfc.pfc523.activitys.fyh.BusQueryActivity;
 //import cn.pfc.pfc523.activitys.fyh.BusQueryActivity;
@@ -97,6 +98,9 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case 14:
                         startActivity(new Intent(MainActivity.this, T60Activity.class));
+                        break;
+                    case 15:
+                        startActivity(new Intent(MainActivity.this, T63Activity.class));
                         break;
                 }
             }

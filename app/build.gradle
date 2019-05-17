@@ -28,4 +28,5 @@ dependencies {
     implementation files('libs/MPAndroidChart-v2.1.5.jar')
     implementation files('libs/volley.jar')
     implementation files('libs/ZXing-3.3.3.jar')
+    implementation 'com.contrarywind:Android-PickerView:4.1.7'
 }
