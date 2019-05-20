@@ -27,6 +27,8 @@ import cn.pfc.pfc523.activitys.fyh.DataAnalysisActivity;
 import cn.pfc.pfc523.activitys.fyh.EnvironmentIndex.EnvironmentIndexActivity;
 import cn.pfc.pfc523.activitys.MyAccountActivity;
 import cn.pfc.pfc523.activitys.RoadQueryActivity;
+import cn.pfc.pfc523.activitys.fyh.ParkingLotActivity;
+import cn.pfc.pfc523.activitys.fyh.PeccancyTypeParserActivity;
 import cn.pfc.pfc523.activitys.fyh.TravelManageActivity;
 import cn.pfc.pfc523.services.InternetServices;
 
@@ -108,6 +110,12 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case 16:
                         startActivity(new Intent(MainActivity.this, DataAnalysisActivity.class));
+                        break;
+                    case 17:
+                        startActivity(new Intent(MainActivity.this, ParkingLotActivity.class));
+                        break;
+                    case 18:
+                        startActivity(new Intent(MainActivity.this, PeccancyTypeParserActivity.class));
                         break;
                 }
             }

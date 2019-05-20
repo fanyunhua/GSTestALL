@@ -6,7 +6,8 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_CALENDAR" />
     <uses-permission android:name="android.permission.CALL_PHONE" />
-    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -14,7 +15,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <!--<activity android:name=".activitys.fyh.DataAnalysisActivity"></activity>-->
+        <activity android:name=".activitys.fyh.PeccancyTypeParserActivity"></activity>
+        <activity android:name=".activitys.fyh.ParkingLotActivity" /> <!-- <activity android:name=".activitys.fyh.DataAnalysisActivity"></activity> -->
         <activity android:name=".activitys.ConfirmActivity" />
         <activity android:name=".activitys.StationSelectActivity" />
         <activity android:name=".activitys.SelectDateActivity" />
@@ -49,16 +51,18 @@
         <activity android:name=".activitys.T33Activity" />
         <activity android:name=".activitys.T35Activity" />
         <activity android:name=".activitys.T35_2Activity" />
-        <activity android:name=".activitys.T27Activity"></activity>
-        <activity android:name=".activitys.T33Activity"></activity>
-        <activity android:name=".activitys.T35Activity"></activity>
-        <activity android:name=".activitys.T35_2Activity"></activity>
-        <activity android:name=".activitys.T60Activity"></activity>
-        <activity android:name=".activitys.T63Activity"/>
-        <activity android:name=".activitys.T63InForActivity"/>
-        <activity android:name=".activitys.T63CarActivity"/>
-        <service android:name=".services.InternetServices"/>
-        <activity android:name=".activitys.T63PayActivity"/>
+        <activity android:name=".activitys.T27Activity" />
+        <activity android:name=".activitys.T33Activity" />
+        <activity android:name=".activitys.T35Activity" />
+        <activity android:name=".activitys.T35_2Activity" />
+        <activity android:name=".activitys.T60Activity" />
+        <activity android:name=".activitys.T63Activity" />
+        <activity android:name=".activitys.T63InForActivity" />
+        <activity android:name=".activitys.T63CarActivity" />
+
+        <service android:name=".services.InternetServices" />
+
+        <activity android:name=".activitys.T63PayActivity" />
     </application>
 
 </manifest>

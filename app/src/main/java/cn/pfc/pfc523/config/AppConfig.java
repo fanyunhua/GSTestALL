@@ -3,7 +3,7 @@ package cn.pfc.pfc523.config;
 
 
 public class AppConfig {
-    private static String IP = "192.168.90.12";
+    private static String IP = "192.168.90.13";
     private static final int PORT = 8080;
     public static final String BASE_URL = "http://" + IP + ":" + PORT
             + "/transportservice/action/";
