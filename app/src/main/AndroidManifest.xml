@@ -63,6 +63,7 @@
         <service android:name=".services.InternetServices" />
 
         <activity android:name=".activitys.T63PayActivity" />
+        <activity android:name=".activitys.T49Activity"/>
     </application>
 
 </manifest>

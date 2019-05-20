@@ -17,6 +17,7 @@ import cn.pfc.pfc523.activitys.RoadQuery2Activity;
 import cn.pfc.pfc523.activitys.T27Activity;
 import cn.pfc.pfc523.activitys.T33Activity;
 import cn.pfc.pfc523.activitys.T35Activity;
+import cn.pfc.pfc523.activitys.T49Activity;
 import cn.pfc.pfc523.activitys.T60Activity;
 import cn.pfc.pfc523.activitys.T63Activity;
 import cn.pfc.pfc523.activitys.ZDGLActivity;
@@ -115,7 +116,10 @@ public class MainActivity extends AppCompatActivity {
                         startActivity(new Intent(MainActivity.this, ParkingLotActivity.class));
                         break;
                     case 18:
-                        startActivity(new Intent(MainActivity.this, PeccancyTypeParserActivity.class));
+                    startActivity(new Intent(MainActivity.this, PeccancyTypeParserActivity.class));
+                        break;
+                    case 19:
+                        startActivity(new Intent(MainActivity.this, T49Activity.class));
                         break;
                 }
             }
